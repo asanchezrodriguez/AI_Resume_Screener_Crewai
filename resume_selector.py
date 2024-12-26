@@ -1,12 +1,15 @@
 import os
 from crewai import Agent, Task, Crew
+from typing import Dict, List
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Define the job description
 job_description = """
 Job Title: Senior Product Manager - AI Chat Assistant
 About the Role:
-We're seeking an innovative Product Manager to lead the development of a cutting-edge AI chat assistant that will transform user 
-interaction and engagement. The ideal candidate will drive product strategy, user experience, and feature development for an intelligent conversational AI platform.
+We're seeking an innovative Product Manager to lead the development of a cutting-edge AI chat assistant that will transform user interaction and engagement. The ideal candidate will drive product strategy, user experience, and feature development for an intelligent conversational AI platform.
 
 Key Responsibilities:
 - Define product vision and roadmap for an AI chat assistant
@@ -75,7 +78,7 @@ resumes = [
     }
 ]
 
-# Agent 1: Candidate Screening Agent
+# Create Candidate Screening Agent
 candidate_screener = Agent(
     role="Senior Talent Acquisition Specialist",
     goal="Identify the top 3 candidates who best match the job description for a Senior Product Manager in AI Chat Assistant development",
@@ -83,10 +86,10 @@ candidate_screener = Agent(
     particularly in AI and product management roles. Your keen eye for detail allows you to match candidate 
     backgrounds precisely to job requirements.""",
     verbose=True,
-    llm="gpt-4o"
+    llm="gpt-4"
 )
 
-# Task 1: Create Screening Task
+# Create Screening Task
 screening_task = Task(
     description=f"""Carefully review the job description and each candidate's resume:
     1. Analyze how each candidate's experience aligns with the job requirements
