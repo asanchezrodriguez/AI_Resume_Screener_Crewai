@@ -7,100 +7,203 @@ load_dotenv()
 
 # Define the job description
 job_description = """
-Job Title: Senior Product Manager - AI Chat Assistant
-About the Role:
-We're seeking an innovative Product Manager to lead the development of a cutting-edge AI chat assistant that will transform user interaction and engagement. The ideal candidate will drive product strategy, user experience, and feature development for an intelligent conversational AI platform.
+Título del Puesto: Gerente Senior de Producto - Asistente de Chat con IA
 
-Key Responsibilities:
-- Define product vision and roadmap for an AI chat assistant
-- Conduct user research to identify key features and use cases
-- Collaborate with AI/ML engineers to translate technical capabilities into user-centric features
-- Design and prioritize product requirements that balance technical feasibility and user needs
-- Develop and track key performance indicators (KPIs) for user adoption, engagement, and satisfaction
-- Work closely with design, engineering, and data science teams to iteratively improve the product
-- Manage the end-to-end product development lifecycle
+Acerca del Puesto:
+Estamos buscando un Gerente de Producto innovador para liderar el desarrollo de un asistente de chat con IA de vanguardia que transformará la interacción y el compromiso de los usuarios. El candidato ideal impulsará la estrategia del producto, la experiencia del usuario y el desarrollo de funciones para una plataforma de IA conversacional inteligente.
 
-Required Qualifications:
-- 5+ years of product management experience, preferably in AI, SaaS, or conversational technologies
-- Strong understanding of AI/ML product development
-- Experience in defining product strategies for complex, intelligent software
-- Excellent communication and cross-functional collaboration skills
-- Proven track record of shipping successful digital products
-- Deep curiosity about emerging AI technologies
+Responsabilidades Clave:
+- Definir la visión y la hoja de ruta del producto para un asistente de chat con IA
+- Realizar investigaciones de usuarios para identificar características clave y casos de uso
+- Colaborar con ingenieros de IA/ML para traducir las capacidades técnicas en funciones centradas en el usuario
+- Diseñar y priorizar los requisitos del producto equilibrando la viabilidad técnica y las necesidades del usuario
+- Desarrollar y realizar un seguimiento de los indicadores clave de rendimiento (KPIs) para la adopción, el compromiso y la satisfacción del usuario
+- Trabajar de cerca con los equipos de diseño, ingeniería y ciencias de datos para mejorar el producto de forma iterativa
+- Gestionar el ciclo de vida completo de desarrollo del producto
 
-Preferred Skills:
-- Background in natural language processing
-- Experience with generative AI products
-- Technical understanding of large language models
+Requisitos Obligatorios:
+- Más de 5 años de experiencia en gestión de productos, preferentemente en IA, SaaS o tecnologías conversacionales
+- Sólida comprensión del desarrollo de productos de IA/ML
+- Experiencia en definir estrategias de producto para software complejo e inteligente
+- Excelentes habilidades de comunicación y colaboración multifuncional
+- Historial comprobado de lanzamiento de productos digitales exitosos
+- Profunda curiosidad por las tecnologías emergentes de IA
+
+Habilidades Deseables:
+- Antecedentes en procesamiento de lenguaje natural
+- Experiencia con productos de IA generativa
+- Conocimiento técnico de modelos de lenguaje de gran escala
 """
+
 
 # List of resumes
 resumes = [
     {
         "name": "Sarah Chen",
-        "resume": "Sarah Chen leveraged her computer science background to transition into product management at a rapidly growing AI startup. She successfully launched three machine learning products that increased company revenue by 40% within two years. Her expertise in data-driven decision-making and agile methodologies enabled her to streamline product development processes. Sarah holds a Master's degree in Computer Science from Stanford University and has deep experience in user experience design. She has been recognized for her ability to bridge technical and business requirements in high-growth technology environments."
+        "resume": (
+            "Sarah Chen aprovechó su formación en ciencias de la computación para pasar "
+            "a la gestión de productos en una startup de IA en rápido crecimiento. "
+            "Lanzó con éxito tres productos de aprendizaje automático que aumentaron "
+            "los ingresos de la empresa en un 40% en dos años. Su experiencia en la toma "
+            "de decisiones basadas en datos y metodologías ágiles le permitió optimizar "
+            "los procesos de desarrollo de productos. Sarah posee una maestría en Ciencias "
+            "de la Computación de la Universidad de Stanford y cuenta con amplia experiencia "
+            "en diseño de experiencia de usuario. Ha sido reconocida por su capacidad de "
+            "conectar requisitos técnicos y comerciales en entornos tecnológicos de alto "
+            "crecimiento."
+        )
     },
     {
         "name": "Michael Rodriguez",
-        "resume": "Michael Rodriguez brings 8 years of enterprise software product management experience from his tenure at Fortune 500 technology companies. He has a proven track record of managing complex SaaS products that serve large-scale business clients across multiple industries. Michael's strategic approach to product development has consistently resulted in double-digit user adoption rates and significant customer satisfaction improvements. He is skilled in conducting comprehensive market research and translating customer insights into actionable product roadmaps. Michael holds an MBA from Northwestern University with a focus on technology innovation."
+        "resume": (
+            "Michael Rodriguez aporta 8 años de experiencia en gestión de productos de "
+            "software empresarial gracias a su trayectoria en empresas tecnológicas de la "
+            "lista Fortune 500. Tiene un historial comprobado de gestionar productos SaaS "
+            "complejos que atienden a clientes empresariales de gran escala en múltiples "
+            "industrias. El enfoque estratégico de Michael para el desarrollo de productos "
+            "ha resultado constantemente en tasas de adopción de usuarios de dos dígitos y "
+            "mejoras significativas en la satisfacción del cliente. Es experto en realizar "
+            "investigaciones de mercado exhaustivas y traducir las percepciones de los "
+            "clientes en hojas de ruta de producto accionables. Michael posee un MBA de la "
+            "Universidad Northwestern con un enfoque en innovación tecnológica."
+        )
     },
     {
         "name": "Elena Martinez",
-        "resume": "Elena Martinez specialized in healthcare technology product management, driving digital transformation for patient engagement platforms. Her deep understanding of healthcare regulations and user-centered design helped her develop HIPAA-compliant mobile applications that improved patient communication. Elena has successfully managed cross-functional teams to deliver products that integrate complex healthcare systems and improve operational efficiency. She brings a unique blend of technical knowledge and empathy-driven design to her product management approach. Elena completed her Product Management certification from UC Berkeley's Executive Education program."
+        "resume": (
+            "Elena Martinez se especializó en la gestión de productos de tecnología sanitaria, "
+            "impulsando la transformación digital de plataformas de compromiso con los pacientes. "
+            "Su profundo entendimiento de las regulaciones sanitarias y el diseño centrado en el "
+            "usuario le permitió desarrollar aplicaciones móviles compatibles con HIPAA que mejoraron "
+            "la comunicación con los pacientes. Elena ha gestionado equipos multifuncionales para "
+            "entregar productos que integran sistemas de salud complejos y mejoran la eficiencia "
+            "operativa. Aporta una combinación única de conocimientos técnicos y diseño basado en la "
+            "empatía. Elena completó su certificación en Gestión de Productos en el programa de "
+            "Educación Ejecutiva de UC Berkeley."
+        )
     },
     {
         "name": "Jason Wang",
-        "resume": "Jason Wang has spent the last six years leading product teams in high-growth e-commerce platforms, consistently delivering revenue-generating features. His expertise in conversion optimization and user experience design has directly contributed to increasing online sales by over 60% across multiple companies. Jason is adept at using data analytics to drive product decisions and has extensive experience with A/B testing and user behavior analysis. He has managed global product teams and understands the nuances of creating scalable, user-friendly digital experiences. Jason holds a Bachelor's degree in Business Administration with a minor in Computer Science."
+        "resume": (
+            "Jason Wang ha pasado los últimos seis años liderando equipos de producto en plataformas "
+            "de comercio electrónico de alto crecimiento, entregando constantemente funciones que "
+            "generan ingresos. Su experiencia en optimización de la conversión y diseño de experiencia "
+            "de usuario ha contribuido directamente a aumentar las ventas en línea en más del 60% en "
+            "múltiples empresas. Jason es experto en el uso de análisis de datos para guiar las "
+            "decisiones de producto y cuenta con amplia experiencia en pruebas A/B y análisis de "
+            "comportamiento del usuario. Ha gestionado equipos de producto a nivel global y comprende "
+            "las complejidades de crear experiencias digitales escalables y fáciles de usar. Jason "
+            "tiene una licenciatura en Administración de Empresas con especialización menor en "
+            "Ciencias de la Computación."
+        )
     },
     {
         "name": "Aria Patel",
-        "resume": "Aria Patel brings a unique combination of financial expertise and product management skills from her work in fintech startups. She has developed innovative payment solutions and investment tracking tools that have been adopted by over 500,000 users. Aria's ability to understand complex financial regulations while creating intuitive user experiences sets her apart in the product management field. She has experience managing end-to-end product lifecycles and collaborating with engineering, design, and marketing teams. Aria completed her Product Management Professional Certification from MIT Professional Education."
+        "resume": (
+            "Aria Patel aporta una combinación única de conocimientos financieros y habilidades de "
+            "gestión de productos por su trabajo en startups fintech. Ha desarrollado soluciones de "
+            "pago innovadoras y herramientas de seguimiento de inversiones que han sido adoptadas "
+            "por más de 500.000 usuarios. La capacidad de Aria para comprender regulaciones "
+            "financieras complejas y al mismo tiempo crear experiencias de usuario intuitivas la "
+            "distingue en el campo de la gestión de productos. Tiene experiencia en gestionar el "
+            "ciclo de vida completo de un producto y colaborar con equipos de ingeniería, diseño y "
+            "marketing. Aria completó su Certificación Profesional en Gestión de Productos en MIT "
+            "Professional Education."
+        )
     },
     {
         "name": "Carlos Gomez",
-        "resume": "Carlos Gomez has specialized in building products for emerging markets, with extensive experience in Latin American and Southeast Asian technology ecosystems. His product management approach focuses on understanding local user needs and creating solutions that address unique market challenges. Carlos has launched mobile applications that achieved over 1 million downloads across multiple developing countries. He is skilled in conducting grassroots user research and adapting global product strategies to local contexts. Carlos holds a dual degree in International Business and Digital Innovation."
+        "resume": (
+            "Carlos Gomez se ha especializado en la creación de productos para mercados emergentes, "
+            "con amplia experiencia en los ecosistemas tecnológicos de América Latina y el sudeste "
+            "asiático. Su enfoque de gestión de productos se centra en comprender las necesidades "
+            "locales y crear soluciones que aborden desafíos específicos del mercado. Carlos ha "
+            "lanzado aplicaciones móviles que han superado el millón de descargas en varios países "
+            "en desarrollo. Es experto en realizar investigaciones de campo con los usuarios y "
+            "adaptar estrategias de productos globales a contextos locales. Carlos posee un doble "
+            "título en Negocios Internacionales e Innovación Digital."
+        )
     },
     {
         "name": "Rebecca Liu",
-        "resume": "Rebecca Liu has dedicated her career to transforming educational experiences through technology product management. She has developed adaptive learning platforms used by over 100 school districts, improving student engagement and learning outcomes. Rebecca's background in educational psychology enables her to create products that genuinely address learning challenges. She is experienced in managing complex stakeholder relationships, including educators, administrators, and technology teams. Rebecca completed her Master's in Learning Technologies from Columbia University's Teachers College."
+        "resume": (
+            "Rebecca Liu ha dedicado su carrera a transformar experiencias educativas mediante la "
+            "gestión de productos tecnológicos. Ha desarrollado plataformas de aprendizaje adaptativo "
+            "utilizadas por más de 100 distritos escolares, mejorando el compromiso de los estudiantes "
+            "y los resultados de aprendizaje. La formación de Rebecca en psicología educativa le "
+            "permite crear productos que realmente abordan los desafíos de aprendizaje. Tiene "
+            "experiencia en gestionar relaciones con diversos interesados, incluidos educadores, "
+            "administradores y equipos de tecnología. Rebecca completó su maestría en Tecnologías "
+            "de Aprendizaje en Teachers College de la Universidad de Columbia."
+        )
     },
     {
         "name": "Alex Rodriguez",
-        "resume": "Alex Rodriguez brings dynamic product management experience from the competitive gaming and entertainment technology sector. He has launched multiple gaming platforms and digital experiences that reached millions of users worldwide. Alex is expert in managing agile development teams, conducting player feedback analysis, and creating compelling digital product roadmaps. His understanding of user engagement mechanics has been critical in developing successful interactive platforms. Alex holds a Bachelor's degree in Interactive Media Design."
+        "resume": (
+            "Alex Rodriguez aporta una experiencia dinámica en gestión de productos desde el sector de "
+            "videojuegos competitivos y tecnología del entretenimiento. Ha lanzado múltiples "
+            "plataformas de juegos y experiencias digitales que alcanzaron a millones de usuarios en "
+            "todo el mundo. Alex es experto en liderar equipos de desarrollo ágiles, realizar análisis "
+            "de retroalimentación de jugadores y crear hojas de ruta de productos digitales "
+            "atractivas. Su comprensión de las mecánicas de compromiso del usuario ha sido clave para "
+            "desarrollar plataformas interactivas exitosas. Alex tiene una licenciatura en Diseño de "
+            "Medios Interactivos."
+        )
     },
     {
         "name": "Samira Khan",
-        "resume": "Samira Khan focuses on developing technology products that address critical sustainability challenges. Her product management experience includes creating software solutions for renewable energy tracking, carbon footprint management, and sustainable supply chain optimization. Samira has a holistic approach to product development, considering environmental impact alongside traditional business metrics. She has managed international product teams and successfully launched products in European and North American markets. Samira completed her Sustainable Business Strategy certification from Harvard Business School."
+        "resume": (
+            "Samira Khan se centra en desarrollar productos tecnológicos que abordan desafíos "
+            "críticos de sostenibilidad. Su experiencia en gestión de productos incluye la creación "
+            "de soluciones de software para el seguimiento de energías renovables, la gestión de la "
+            "huella de carbono y la optimización de la cadena de suministro sostenible. Samira tiene "
+            "un enfoque holístico para el desarrollo de productos, considerando el impacto "
+            "medioambiental junto con las métricas de negocio tradicionales. Ha gestionado equipos "
+            "de producto a nivel internacional y ha lanzado productos con éxito en los mercados "
+            "europeo y norteamericano. Samira completó su certificación en Estrategia Empresarial "
+            "Sostenible en la Escuela de Negocios de Harvard."
+        )
     },
     {
         "name": "Daniel Park",
-        "resume": "Daniel Park specializes in product management for artificial intelligence and machine learning platforms. He has extensive experience translating complex AI capabilities into user-friendly products across various industries, including healthcare, finance, and customer service. Daniel's technical background in computer science allows him to effectively communicate between engineering teams and business stakeholders. He has managed the development of AI-driven products that have significantly improved operational efficiency for enterprise clients. Daniel holds a Ph.D. in Machine Learning from Carnegie Mellon University."
+        "resume": (
+            "Daniel Park se especializa en gestión de productos para plataformas de inteligencia "
+            "artificial y aprendizaje automático. Tiene amplia experiencia en traducir capacidades "
+            "complejas de IA en productos fáciles de usar en diversas industrias, incluidas "
+            "sanitaria, financiera y de atención al cliente. La formación técnica de Daniel en "
+            "ciencias de la computación le permite comunicarse de manera efectiva entre los equipos "
+            "de ingeniería y las partes interesadas del negocio. Ha gestionado el desarrollo de "
+            "productos impulsados por IA que han mejorado significativamente la eficiencia "
+            "operativa de clientes empresariales. Daniel posee un doctorado en Aprendizaje "
+            "Automático de la Universidad Carnegie Mellon."
+        )
     }
 ]
 
 # Create Candidate Screening Agent
 candidate_screener = Agent(
-    role="Senior Talent Acquisition Specialist",
-    goal="Identify the top 3 candidates who best match the job description for a Senior Product Manager in AI Chat Assistant development",
-    backstory="""You are an experienced talent acquisition specialist with deep expertise in tech recruiting, 
-    particularly in AI and product management roles. Your keen eye for detail allows you to match candidate 
-    backgrounds precisely to job requirements.""",
+    role="Especialista Senior en Adquisición de Talento",
+    goal="Identificar a los 3 mejores candidatos que mejor se ajusten a la descripción del puesto para un Gerente Senior de Producto en el desarrollo de un Asistente de Chat con IA",
+    backstory="""Eres un especialista en adquisición de talento con amplia experiencia en reclutamiento tecnológico, 
+    particularmente en roles de IA y gestión de productos. Tu agudeza para los detalles te permite alinear de manera 
+    precisa los perfiles de los candidatos con los requisitos del puesto.""",
     verbose=True,
-    llm="gpt-4"
+    llm="gpt-3.5-turbo",
 )
 
 # Create Screening Task
 screening_task = Task(
-    description=f"""Carefully review the job description and each candidate's resume:
-    1. Analyze how each candidate's experience aligns with the job requirements
-    2. Pay special attention to:
-       - Experience in AI/ML product management
-       - Technical understanding of complex software products
-       - Track record of successful product launches
-    3. Rank the candidates and provide a detailed rationale for the top 3 selections
-    4. Explain why these candidates stand out for this specific AI Chat Assistant Product Manager role
+    description=f"""Revisa cuidadosamente la descripción del puesto y el currículum de cada candidato:
+    1. Analiza cómo la experiencia de cada candidato se alinea con los requisitos del puesto.
+    2. Presta especial atención a:
+       - Experiencia en la gestión de productos de IA/ML
+       - Conocimientos técnicos en software complejo
+       - Historial de lanzamientos exitosos de productos
+    3. Clasifica a los candidatos y proporciona una justificación detallada para las 3 mejores selecciones.
+    4. Explica por qué estos candidatos destacan para este puesto específico de Gerente de Producto de Asistente de Chat con IA.
+    5. Toda tu respuesta y tu razonamiento deben estar en español
 
-    Job Description:
+    Descripción del Puesto:
     {job_description}
 
     Candidate Resumes:
@@ -120,4 +223,4 @@ crew = Crew(
 # Kickoff the task
 result = crew.kickoff()
 
-print(result)
+#print(result)
